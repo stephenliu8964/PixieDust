@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>On_Error_Value__c</fullName>
+    <description>When an error occurs set this field named in &#39;On Error Field&#39; to this value</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>When an error occurs set this field named in &#39;On Error Field&#39; to this value</inlineHelpText>
+    <label>On Error Value</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

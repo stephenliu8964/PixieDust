@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Value__c</fullName>
+    <description>If no &#39;From&#39; field is specified, or if it is BLANK, then this value is sent to the &#39;To&#39; field  for all records instead.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>If no &#39;From&#39; field is specified, or if it is BLANK, then this value is sent to the &#39;To&#39; field  for all records instead.
+
+If both &#39;From&#39; and &#39;Value&#39; are blank and there are no other transformation rules, an empty record is created.</inlineHelpText>
+    <label>Value</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

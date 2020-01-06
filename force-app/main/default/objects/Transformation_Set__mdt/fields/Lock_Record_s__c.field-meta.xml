@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Record_s__c</fullName>
+    <description>Best practice would be to put any fields which are lookups to other objects on the Source Object which are being transformed to fields in the transformation rules. Syntax is Field:SObject, comma separated, i.e. idField1:Account,idField2:Contact.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Best practice would be to put any fields which are lookups to other objects on the Source Object which are being transformed to fields in the transformation rules. Syntax is Field:SObject, comma separated, i.e. idField1:Account,idField2:Contact.</inlineHelpText>
+    <label>Lock Record(s)</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

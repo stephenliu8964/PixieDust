@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Map_to_Record__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Instead of mapping from the FROM field on the source to the TO field on the target, map the entirety of the FROM field to the Target RECORD. (From field expected as JSON)</inlineHelpText>
+    <label>Map to Record</label>
+    <type>Checkbox</type>
+</CustomField>

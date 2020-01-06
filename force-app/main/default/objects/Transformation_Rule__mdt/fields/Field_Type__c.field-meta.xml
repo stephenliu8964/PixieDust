@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_Type__c</fullName>
+    <description>The field type which is being transformed. For things like Currency, Phone, Email, etc these can be handled as text or number (if preferred)</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>The field type which is being transformed. For things like Currency, Phone, Email, etc these can be handled as text or number (if preferred)</inlineHelpText>
+    <label>Field Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Text</fullName>
+                <default>true</default>
+                <label>Text</label>
+            </value>
+            <value>
+                <fullName>Number</fullName>
+                <default>false</default>
+                <label>Number</label>
+            </value>
+            <value>
+                <fullName>Date</fullName>
+                <default>false</default>
+                <label>Date</label>
+            </value>
+            <value>
+                <fullName>Datetime</fullName>
+                <default>false</default>
+                <label>Datetime</label>
+            </value>
+            <value>
+                <fullName>Checkbox</fullName>
+                <default>false</default>
+                <label>Checkbox</label>
+            </value>
+            <value>
+                <fullName>Picklist</fullName>
+                <default>false</default>
+                <label>Picklist</label>
+            </value>
+            <value>
+                <fullName>Multipicklist</fullName>
+                <default>false</default>
+                <label>Multipicklist</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

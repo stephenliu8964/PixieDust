@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Translation__c</fullName>
+    <description>Used to translate certain values to other values during the transformation. Pipe separated text for each translation. I.e. for &quot;1=PHD Applicant|2=Graduate|3=Skilled&quot; when we have &quot;2&quot; in the source field, &quot;Graduate&quot; is placed in the target field.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Used to translate certain values to other values during the transformation. Pipe separated text for each translation. I.e. for &quot;1=PHD Applicant|2=Graduate|3=Skilled&quot; when we have &quot;2&quot; in the source field, &quot;Graduate&quot; is placed in the target field.</inlineHelpText>
+    <label>Translation</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

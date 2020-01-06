@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>From_Field__c</fullName>
+    <description>The field name to transform from. Fields which hold JSON are always treated like an array of objects, so 0-many records can be created. The only way the Transformation process knows that this is JSON is if the &#39;.&#39; character is included (i.e. Qualification__c.Name instead of just Qualification__c - it knows to transform the Name in JSON from the Qualification__c Field to the target field in the many objects created)</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>The field name to transform from. When the from field holds JSON ensure to include the JSON field name. I.e. When creating many qualifications held in a &#39;Qualification__c&#39; field, we might expect to see &#39;Qualification__c.Name&#39;</inlineHelpText>
+    <label>From Field</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
