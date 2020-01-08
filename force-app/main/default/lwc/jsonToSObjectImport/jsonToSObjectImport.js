@@ -63,6 +63,7 @@ export default class SkillSelectImport extends LightningElement {
                 tabString
             ).then(results =>  {
                 let resultData = results.data;
+                resultData.pop();
                 this.objsString = JSON.stringify(resultData);
             });
 
@@ -94,7 +95,6 @@ export default class SkillSelectImport extends LightningElement {
         console.log(this.sObjectName);
         console.log(this.externalId);
         console.log(this.objsString);
-
         if (this.sObjectName && this.objsString) {
             this.loading = true;
             startImportUpsert({

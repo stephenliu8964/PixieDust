@@ -52,14 +52,16 @@ public without sharing class TransformationUtil {
             }
 
         } else {
-            try {
+            //try {
                 TransformationUtil.setupData();
                 TransformationUtil.createData();
                 TransformationUtil.createLookups();
                 TransformationUtil.createRecords();
-            } catch (Exception e) {
-                TransformationUtil.fail('TransformationUtil.transform', e);
-            }
+            // } catch (Exception e) {
+            //     //TODO need log util to capture error
+            //     //TransformationUtil.fail('TransformationUtil.transform', e);
+            //     System.debug(e);
+            // }
 
         }
     }
@@ -115,7 +117,8 @@ public without sharing class TransformationUtil {
             }
             ret.dmlResult = DML_RESULT_PROCESSED;
         } catch (Exception ex) {
-            TransformationUtil.fail('JSON to SObject transformation failed', ex);
+            //TODO need a log util to log errors
+            //TransformationUtil.fail('JSON to SObject transformation failed', ex);
             ret.dmlResult = DML_RESULT_ERROR;
             ret.dmlFailedReason = ex.getMessage();
         }
@@ -567,7 +570,7 @@ public without sharing class TransformationUtil {
     }
 
     private static void lockRecords(){
-        if(fromRecords != null && fromRecords.size() == 1){
+        if(fromRecords != null && fromRecords.size() == 1 && Transformation_Set.Lock_Record_s__c != null){
             List<String> lockReferences = Transformation_Set.Lock_Record_s__c.split(',');
 
             for(String lockReference : lockReferences){

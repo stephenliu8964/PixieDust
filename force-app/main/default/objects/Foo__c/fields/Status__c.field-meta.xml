@@ -16,11 +16,6 @@
                 <label>Draft</label>
             </value>
             <value>
-                <fullName>Transform</fullName>
-                <default>false</default>
-                <label>Transform</label>
-            </value>
-            <value>
                 <fullName>Transformed</fullName>
                 <default>false</default>
                 <label>Transformed</label>
