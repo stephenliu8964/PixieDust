@@ -4,6 +4,7 @@
 
 package.xml
 force-app/main/default/profiles
+force-app/main/default/appMenus
 
 # LWC configuration files
 **/jsconfig.json
