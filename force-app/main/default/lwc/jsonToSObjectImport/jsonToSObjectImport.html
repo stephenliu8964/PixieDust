@@ -1,0 +1,88 @@
+<template>
+    <div class="slds-box slds-theme_default">
+        <div if:true={loading} class="spinnerHolder-mg">
+            <lightning-spinner
+                    alternative-text="Loading...">
+            </lightning-spinner>
+        </div>
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_small">JSON to SObject Import Demo</h1>
+            <p class="slds-text-body_regular">Copy your data from Excel and paste it onto to the text box below</p>
+            <p class="slds-text-body_regular">Once done, the preview will be shown in the below table, and if you are happy with it, click "Import" to upsert records.</p>
+        </div>
+        <template if:true={errorMessage}>
+            <p style="color:red">
+                {errorMessage}
+            </p>
+        </template><br>
+        <lightning-layout vertical-align="end" horizontal-align="end" pull-to-boundary="small" multiple-rows>
+            <lightning-layout-item padding="around-small" size="6" small-device-size="6" medium-device-size="6" large-device-size="6">
+                <lightning-input 
+                                type="text"
+                                required
+                                label="SObeject API Name"
+                                value={sObjectName}
+                                onchange={handleSObjectName}
+                >
+                </lightning-input>
+                <lightning-input 
+                                type="text"
+                                label="SObeject External Id"
+                                value={externalId}
+                                onchange={handleExternalId}
+                >
+                </lightning-input>
+                <lightning-textarea
+                            label="Paste your data here"
+                            aria-label="Paste your data here"
+                            class="textAreaInput"
+                            name="fileTextArea"
+                            onchange={handleTextAreaInput}
+                >
+                </lightning-textarea>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="6" small-device-size="6" medium-device-size="6" large-device-size="6">
+                <lightning-button variant="brand"
+                                  label="Import"
+                                  title="Import"
+                                  onclick={handleImport}
+                >
+                </lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="12" small-device-size="12" medium-device-size="12" large-device-size="12">
+                {recordLoaded} Queued <br>
+                Import Result: {dmlResult} <br>
+                <div if:true={dmlFailedReason}>
+                    Import failed reason: {dmlFailedReason}
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+
+        <lightning-layout>
+            <div style="overflow-x:scroll; max-height:350px;">
+                <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+                    <thead>
+                    <tr class="slds-text-title--caps">
+                        <template for:each={headers} for:item='header'>
+                            <th scope="col" key={header.id}>
+                                <div class="slds-truncate" title={header}>{header}</div>
+                            </th>
+                        </template>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={mapOfListValues} for:item="keyValue">
+                            <tr key={keyValue.key}>
+                                <template for:each={keyValue.value} for:item="value">
+                                    <td key={keyValue.key}>
+                                        <div class="slds-truncate" title={value}>{value}</div>
+                                    </td>
+                                </template>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </lightning-layout>
+    </div>
+</template>
