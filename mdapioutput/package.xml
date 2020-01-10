@@ -22,6 +22,7 @@
     <members>Transformation_Record.From_Foo_to_Bar</members>
     <members>Transformation_Record.From_Foo_to_Bar_s_Parent</members>
     <members>Transformation_Relationship.Bar_and_Bar_s_Parent</members>
+    <members>Transformation_Rule.Foo_1st</members>
     <members>Transformation_Rule.Foo_1st_to_Bar_1st</members>
     <members>Transformation_Rule.Foo_1st_to_Bar_s_Parent_First</members>
     <members>Transformation_Set.Test_with_Foo</members>
@@ -98,6 +99,10 @@
     <members>Bar__c.All</members>
     <members>Bar_s_Parent__c.All</members>
     <members>Foo__c.All</members>
+  </types>
+  <types>
+    <name>PermissionSet</name>
+    <members>Transformation_Engine_User</members>
   </types>
   <types>
     <name>StaticResource</name>
