@@ -1,1 +1,2 @@
-TBD
+- Transforms any JSON to any SObject reocds
+- Transforms any SObject reocrds to any SObject records
