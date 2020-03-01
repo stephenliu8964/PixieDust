@@ -1,8 +1,2 @@
-Featurs should include
-    - Transformation Engine
-        -- JSON to SObject Import
-        -- Reord to Record transformation
-    - LWC form questions
-    
-    
-Below are place holder texts, more contents are coming...
+- Transforms any JSON to any SObject reocds
+- Transforms any SObject reocrds to any SObject records
