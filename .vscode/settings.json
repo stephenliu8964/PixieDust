@@ -4,7 +4,7 @@
     "**/bower_components": true,
     "**/.sfdx": true
   },
-  "eslint.nodePath": "c:\\Users\\dq89_\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-47.10.0\\node_modules",
+  "eslint.nodePath": "c:\\Users\\dq89_\\.vscode\\extensions\\salesforce.salesforcedx-vscode-lwc-47.17.1\\node_modules",
   "salesforcedx-vscode-apex.java.home": "C:\\Program Files\\Java\\jre1.8.0_221",
   "salesforcedx-vscode-core.show-cli-success-msg": false
 }

@@ -7,7 +7,7 @@ public with sharing class FooHandler extends TriggerHandler{
     private Map<Id, Foo__c> newFooMap;
 
     public FooHandler() {
-        this.oldFooMap = (Map<Id, Foo__C>) Trigger.oldMap;
+        this.oldFooMap = (Map<Id, Foo__c>) Trigger.oldMap;
         this.newFooMap = (Map<Id, Foo__c>) Trigger.newMap;
     }
 
